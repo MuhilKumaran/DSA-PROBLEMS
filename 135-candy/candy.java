@@ -20,6 +20,7 @@ class Solution {
             if(rate[i-1]>rate[i])
             {
                 res[i-1]=Math.max(res[i-1],1+res[i]);
+                
             }
         }
         for(int val:res)
