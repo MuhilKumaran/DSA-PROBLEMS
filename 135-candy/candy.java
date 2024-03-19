@@ -15,6 +15,7 @@ class Solution {
                 res[i+1]=1+res[i];
             }
         }
+        
         for(i=n-1;i>0;i--)
         {
             if(rate[i-1]>rate[i])
