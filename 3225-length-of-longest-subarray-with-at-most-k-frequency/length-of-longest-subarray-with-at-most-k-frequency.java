@@ -8,18 +8,11 @@ class Solution {
         while(r<n)
         {
             map.put(nums[r],map.getOrDefault(nums[r],0)+1);
-            // int freq=map.getOrDefault(nums[r],0);
-            
-                while(map.get(nums[r])>k)
-                {
-                    map.put(nums[l],map.get(nums[l])-1);
-                    if(map.get(nums[l])==0)
-                        map.remove(nums[l]);
-                    l++;
-                }
-        
-            
-            
+            while(map.get(nums[r])>k)
+            {
+                map.put(nums[l],map.get(nums[l])-1);
+                l++;
+            }
             max=Math.max(max,r-l+1);
             r++;
         }
